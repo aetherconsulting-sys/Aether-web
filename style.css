@@ -565,35 +565,29 @@ a  { text-decoration: none; color: inherit; transition: color var(--transition);
     font-size: 1.8rem; /* Para que el título grande no se salga de madre */
   }
 }
-/* ── Ajuste de Encuadre para Móvil ── */
+/* ── Ajuste Forzado de Encuadre ── */
 .hero-tagline {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--gold);
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  padding: 0 5%;
-}
-
-.hero-tagline::before {
-  content: "";
-  width: 30px;
-  height: 2px;
-  background: var(--gold);
-  flex-shrink: 0;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  color: var(--gold) !important;
+  text-transform: uppercase !important;
+  font-size: 0.7rem !important; /* Más pequeña para que quepa */
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  padding: 0 20px !important;
+  width: 100% !important;
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 6% !important;
-  }
   h1 {
-    font-size: 1.8rem !important;
-    line-height: 1.3;
+    font-size: 1.7rem !important; /* Achicamos el título para que no se salga */
+    line-height: 1.2 !important;
+    padding: 0 20px !important;
+  }
+  .hero__sub {
+    padding: 0 20px !important;
+    font-size: 0.95rem !important;
   }
 }
+
