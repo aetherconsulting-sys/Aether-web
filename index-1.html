@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aether Consulting — Intermediación comercial con perfil técnico y económico. Conectamos oportunidades, creamos valor.">
+  <meta property="og:title" content="Aether Consulting">
+  <meta property="og:description" content="Intermediación comercial · Ingeniería técnica · Consultoría estratégica">
+  <meta property="og:type" content="website">
+  <title>Aether Consulting — Conectando Oportunidades</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230D1B2A'/><text y='24' x='4' font-size='22' font-family='Georgia' fill='%23F0B429' font-weight='bold'>A</text></svg>">
+</head>
+<body>
+
+<!-- ── NAVIGATION ─────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">
+      AETHER <span>CONSULTING</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#nosotros" data-i18n="nav.about"></a></li>
+      <li><a href="#servicios" data-i18n="nav.services"></a></li>
+      <li><a href="#sectores" data-i18n="nav.sectors"></a></li>
+      <li><a href="#proceso" data-i18n="nav.process"></a></li>
+      <li><a href="#contacto" data-i18n="nav.contact"></a></li>
+      <li>
+        <a href="#contacto" class="nav__cta" data-i18n="nav.cta"></a>
+      </li>
+      <li class="nav__lang">
+        <button data-lang="es" onclick="setLang('es')">ES</button>
+        <button data-lang="en" onclick="setLang('en')">EN</button>
+      </li>
+    </ul>
+    <div class="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────── -->
+<section class="hero" id="inicio">
+  <div class="hero__bg"></div>
+  <div class="hero__grid"></div>
+  <div class="hero__content">
+    <div class="hero__eyebrow fade-in">
+      <span data-i18n="hero.eyebrow"></span>
+    </div>
+    <h1 class="fade-in">
+      <span data-i18n="hero.h1a"></span>&nbsp;<em data-i18n="hero.h1b"></em><br>
+      <span data-i18n="hero.h1c"></span>
+    </h1>
+    <p class="hero__sub fade-in" data-i18n="hero.sub"></p>
+    <div class="hero__actions fade-in">
+      <a href="#servicios" class="btn btn-primary" data-i18n="hero.cta1"></a>
+      <a href="#contacto" class="btn btn-outline" data-i18n="hero.cta2"></a>
+    </div>
+    <div class="hero__stats">
+      <div class="fade-in">
+        <div class="hero__stat-val"><span data-i18n="hero.stat1v"></span></div>
+        <div class="hero__stat-label" data-i18n="hero.stat1l"></div>
+      </div>
+      <div class="fade-in">
+        <div class="hero__stat-val"><span data-i18n="hero.stat2v"></span></div>
+        <div class="hero__stat-label" data-i18n="hero.stat2l"></div>
+      </div>
+      <div class="fade-in">
+        <div class="hero__stat-val"><span data-i18n="hero.stat3v"></span></div>
+        <div class="hero__stat-label" data-i18n="hero.stat3l"></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span data-i18n="hero.scroll"></span>
+  </div>
+</section>
+
+<!-- ── NOSOTROS ─────────────────────────────────────── -->
+<section class="about section" id="nosotros">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__visual fade-in">
+        <div class="about__card">
+          <div class="about__card-number">01</div>
+          <div class="about__card-badge" data-i18n="about.badge"></div>
+          <h3 data-i18n="about.card.h3"></h3>
+          <p data-i18n="about.card.p"></p>
+        </div>
+      </div>
+      <div>
+        <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+          <span class="eyebrow fade-in" data-i18n="about.eyebrow"></span>
+          <h2 class="fade-in" data-i18n="about.h2"></h2>
+          <div class="divider" style="margin-left:0"></div>
+        </div>
+        <p class="fade-in" data-i18n="about.p"></p>
+        <div class="about__features">
+          <div class="about__feature fade-in">
+            <div class="about__feature-icon">⚡</div>
+            <div>
+              <h4 data-i18n="about.f1.h"></h4>
+              <p data-i18n="about.f1.p"></p>
+            </div>
+          </div>
+          <div class="about__feature fade-in">
+            <div class="about__feature-icon">🎯</div>
+            <div>
+              <h4 data-i18n="about.f2.h"></h4>
+              <p data-i18n="about.f2.p"></p>
+            </div>
+          </div>
+          <div class="about__feature fade-in">
+            <div class="about__feature-icon">🤝</div>
+            <div>
+              <h4 data-i18n="about.f3.h"></h4>
+              <p data-i18n="about.f3.p"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICIOS ────────────────────────────────────── -->
+<section class="services section" id="servicios">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow fade-in" data-i18n="svc.eyebrow"></span>
+      <h2 class="fade-in" data-i18n="svc.h2"></h2>
+      <p class="fade-in" data-i18n="svc.p"></p>
+      <div class="divider fade-in"></div>
+    </div>
+    <div class="services__grid">
+      <!-- Intermediación -->
+      <div class="service-card featured fade-in">
+        <div class="service-card__icon">🔗</div>
+        <span class="service-card__tag" data-i18n="svc1.tag"></span>
+        <h3 data-i18n="svc1.h3"></h3>
+        <p data-i18n="svc1.p"></p>
+        <div class="service-card__price">
+          <div class="service-card__price-label" data-i18n="svc1.plabel"></div>
+          <div class="service-card__price-val" data-i18n="svc1.pval"></div>
+          <div style="font-size:.78rem; color:rgba(255,255,255,.4); margin-top:.2rem" data-i18n="svc1.psub"></div>
+        </div>
+        <ul class="service-card__list">
+          <li data-i18n="svc1.l1"></li>
+          <li data-i18n="svc1.l2"></li>
+          <li data-i18n="svc1.l3"></li>
+          <li data-i18n="svc1.l4"></li>
+        </ul>
+      </div>
+      <!-- Ingeniería -->
+      <div class="service-card fade-in">
+        <div class="service-card__icon">⚙️</div>
+        <span class="service-card__tag" data-i18n="svc2.tag"></span>
+        <h3 data-i18n="svc2.h3"></h3>
+        <p data-i18n="svc2.p"></p>
+        <div class="service-card__price">
+          <div class="service-card__price-label" data-i18n="svc2.plabel"></div>
+          <div class="service-card__price-val" data-i18n="svc2.pval"></div>
+          <div style="font-size:.78rem; color:var(--lgray); margin-top:.2rem" data-i18n="svc2.psub"></div>
+        </div>
+        <ul class="service-card__list">
+          <li data-i18n="svc2.l1"></li>
+          <li data-i18n="svc2.l2"></li>
+          <li data-i18n="svc2.l3"></li>
+        </ul>
+      </div>
+      <!-- Consultoría -->
+      <div class="service-card fade-in">
+        <div class="service-card__icon">📊</div>
+        <span class="service-card__tag" data-i18n="svc3.tag"></span>
+        <h3 data-i18n="svc3.h3"></h3>
+        <p data-i18n="svc3.p"></p>
+        <div class="service-card__price">
+          <div class="service-card__price-label" data-i18n="svc3.plabel"></div>
+          <div class="service-card__price-val" data-i18n="svc3.pval"></div>
+          <div style="font-size:.78rem; color:var(--lgray); margin-top:.2rem" data-i18n="svc3.psub"></div>
+        </div>
+        <ul class="service-card__list">
+          <li data-i18n="svc3.l1"></li>
+          <li data-i18n="svc3.l2"></li>
+          <li data-i18n="svc3.l3"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESO ──────────────────────────────────────── -->
+<section class="process section" id="proceso">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow fade-in" data-i18n="proc.eyebrow"></span>
+      <h2 class="fade-in" data-i18n="proc.h2"></h2>
+      <p class="fade-in" data-i18n="proc.p"></p>
+      <div class="divider fade-in"></div>
+    </div>
+    <div class="process__steps">
+      <div class="process__step fade-in">
+        <div class="process__num">01</div>
+        <div class="process__step-icon">🔍</div>
+        <h4 data-i18n="proc1.h"></h4>
+        <p data-i18n="proc1.p"></p>
+      </div>
+      <div class="process__step fade-in">
+        <div class="process__num">02</div>
+        <div class="process__step-icon">🎯</div>
+        <h4 data-i18n="proc2.h"></h4>
+        <p data-i18n="proc2.p"></p>
+      </div>
+      <div class="process__step fade-in">
+        <div class="process__num">03</div>
+        <div class="process__step-icon">🤝</div>
+        <h4 data-i18n="proc3.h"></h4>
+        <p data-i18n="proc3.p"></p>
+      </div>
+      <div class="process__step fade-in">
+        <div class="process__num">04</div>
+        <div class="process__step-icon">✅</div>
+        <h4 data-i18n="proc4.h"></h4>
+        <p data-i18n="proc4.p"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTORES ─────────────────────────────────────── -->
+<section class="sectors section" id="sectores">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow fade-in" data-i18n="sec.eyebrow"></span>
+      <h2 class="fade-in" data-i18n="sec.h2"></h2>
+      <p class="fade-in" data-i18n="sec.p"></p>
+      <div class="divider fade-in"></div>
+    </div>
+    <div class="sectors__grid">
+      <div class="sector-card fade-in">
+        <div class="sector-card__icon">🏭</div>
+        <div>
+          <h4 data-i18n="sec1.h"></h4>
+          <p data-i18n="sec1.p"></p>
+        </div>
+      </div>
+      <div class="sector-card fade-in">
+        <div class="sector-card__icon">⚡</div>
+        <div>
+          <h4 data-i18n="sec2.h"></h4>
+          <p data-i18n="sec2.p"></p>
+        </div>
+      </div>
+      <div class="sector-card fade-in">
+        <div class="sector-card__icon">💻</div>
+        <div>
+          <h4 data-i18n="sec3.h"></h4>
+          <p data-i18n="sec3.p"></p>
+        </div>
+      </div>
+      <div class="sector-card fade-in">
+        <div class="sector-card__icon">📈</div>
+        <div>
+          <h4 data-i18n="sec4.h"></h4>
+          <p data-i18n="sec4.p"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── POR QUÉ ELEGIRNOS ─────────────────────────────── -->
+<section class="whyus section" id="porquenosotros">
+  <div class="container">
+    <div class="whyus__grid">
+      <div>
+        <div class="section-header" style="text-align:left; margin-bottom:2.5rem;">
+          <span class="eyebrow fade-in" data-i18n="why.eyebrow"></span>
+          <h2 class="fade-in" data-i18n="why.h2"></h2>
+          <p class="fade-in" data-i18n="why.p"></p>
+          <div class="divider" style="margin-left:0"></div>
+        </div>
+        <div class="whyus__reasons">
+          <div class="whyus__reason fade-in">
+            <div class="whyus__reason-num">01</div>
+            <div>
+              <h4 data-i18n="why1.h"></h4>
+              <p data-i18n="why1.p"></p>
+            </div>
+          </div>
+          <div class="whyus__reason fade-in">
+            <div class="whyus__reason-num">02</div>
+            <div>
+              <h4 data-i18n="why2.h"></h4>
+              <p data-i18n="why2.p"></p>
+            </div>
+          </div>
+          <div class="whyus__reason fade-in">
+            <div class="whyus__reason-num">03</div>
+            <div>
+              <h4 data-i18n="why3.h"></h4>
+              <p data-i18n="why3.p"></p>
+            </div>
+          </div>
+          <div class="whyus__reason fade-in">
+            <div class="whyus__reason-num">04</div>
+            <div>
+              <h4 data-i18n="why4.h"></h4>
+              <p data-i18n="why4.p"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="whyus__visual fade-in">
+        <div class="whyus__stat">
+          <div class="whyus__stat-val" data-i18n="why.s1v"></div>
+          <div class="whyus__stat-label" data-i18n="why.s1l"></div>
+        </div>
+        <div class="whyus__stat">
+          <div class="whyus__stat-val" data-i18n="why.s2v"></div>
+          <div class="whyus__stat-label" data-i18n="why.s2l"></div>
+        </div>
+        <div class="whyus__stat">
+          <div class="whyus__stat-val" data-i18n="why.s3v"></div>
+          <div class="whyus__stat-label" data-i18n="why.s3l"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACTO ─────────────────────────────────────── -->
+<section class="contact section" id="contacto">
+  <div class="container">
+    <div class="contact__grid">
+      <div>
+        <span class="eyebrow fade-in" data-i18n="cont.eyebrow"></span>
+        <h2 class="fade-in" style="margin:.6rem 0 1rem" data-i18n="cont.h2"></h2>
+        <p class="fade-in" data-i18n="cont.p"></p>
+        <div style="margin-top: 2.5rem;">
+          <div class="contact__item fade-in">
+            <div class="contact__item-icon">✉️</div>
+            <div>
+              <h4 data-i18n="cont.i1.h"></h4>
+              <p>info@aetherconsulting.es</p>
+            </div>
+          </div>
+          <div class="contact__item fade-in">
+            <div class="contact__item-icon">🌐</div>
+            <div>
+              <h4 data-i18n="cont.i2.h"></h4>
+              <p>www.aetherconsulting.es</p>
+            </div>
+          </div>
+          <div class="contact__item fade-in">
+            <div class="contact__item-icon">📍</div>
+            <div>
+              <h4 data-i18n="cont.i3.h"></h4>
+              <p data-i18n="cont.i3.p"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__form-wrap fade-in">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="form.name"></label>
+              <input type="text" name="nombre" data-i18n-placeholder="form.name" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="form.email"></label>
+              <input type="email" name="email" data-i18n-placeholder="form.email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="form.company"></label>
+              <input type="text" name="empresa" data-i18n-placeholder="form.company">
+            </div>
+            <div class="form-group">
+              <label data-i18n="form.service"></label>
+              <select name="servicio">
+                <option value="" data-i18n="form.svc0"></option>
+                <option value="intermediacion" data-i18n="form.svc1"></option>
+                <option value="ingenieria" data-i18n="form.svc2"></option>
+                <option value="consultoria" data-i18n="form.svc3"></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="form.msg"></label>
+            <textarea name="mensaje" data-i18n-placeholder="form.msg" required></textarea>
+          </div>
+          <button type="submit" class="form-submit" data-i18n="form.submit"></button>
+          <p style="font-size:.75rem; color:var(--lgray); margin-top:.8rem; text-align:center" data-i18n="form.legal"></p>
+        </form>
+        <div id="formSuccess" class="form-success">✅ <span data-i18n="form.success"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <div class="footer__logo">AETHER <span>CONSULTING</span></div>
+        <p data-i18n="foot.desc"></p>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="foot.nav"></h5>
+        <ul>
+          <li><a href="#nosotros" data-i18n="nav.about"></a></li>
+          <li><a href="#servicios" data-i18n="nav.services"></a></li>
+          <li><a href="#sectores" data-i18n="nav.sectors"></a></li>
+          <li><a href="#proceso" data-i18n="nav.process"></a></li>
+          <li><a href="#contacto" data-i18n="nav.contact"></a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="foot.services"></h5>
+        <ul>
+          <li><a href="#servicios" data-i18n="svc1.h3"></a></li>
+          <li><a href="#servicios" data-i18n="svc2.h3"></a></li>
+          <li><a href="#servicios" data-i18n="svc3.h3"></a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="foot.legal"></h5>
+        <ul>
+          <li><a href="privacidad.html" data-i18n="foot.privacy"></a></li>
+          <li><a href="cookies.html" data-i18n="foot.cookies"></a></li>
+          <li><a href="aviso-legal.html" data-i18n="foot.legal2"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="foot.copy"></p>
+      <p>
+        <a href="privacidad.html" data-i18n="foot.privacy"></a> ·
+        <a href="aviso-legal.html" data-i18n="foot.legal2"></a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ── COOKIE BANNER ─────────────────────────────────── -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>
+    <span data-i18n="cookie.text"></span>
+    <a href="cookies.html" data-i18n="cookie.more"></a>
+  </p>
+  <button class="cookie-accept" id="cookieAccept" data-i18n="cookie.accept"></button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
