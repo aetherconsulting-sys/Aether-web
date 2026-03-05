@@ -47,7 +47,7 @@ p  { color: var(--gray); line-height: 1.75; }
 a  { text-decoration: none; color: inherit; transition: color var(--transition); }
 
 /* ── Layout ─────────────────────────────────────── */
-.container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 5%; }
 .section    { padding: 100px 0; }
 .section-sm { padding: 60px 0; }
 
@@ -554,4 +554,14 @@ a  { text-decoration: none; color: inherit; transition: color var(--transition);
   .form-row       { grid-template-columns: 1fr; }
   .footer__main   { grid-template-columns: 1fr; gap: 2rem; }
   .footer__bottom { flex-direction: column; text-align: center; }
+}
+/* Ajuste extra para encuadre en móviles */
+@media (max-width: 768px) {
+  .section, .section-sm {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  h1 {
+    font-size: 1.8rem; /* Para que el título grande no se salga de madre */
+  }
 }
